@@ -22,7 +22,9 @@ body {
 .head-img {
   display: block;
   width: 100%;
+
   object-fit: cover;
+  position: relative;
 }
 
 .title {
@@ -34,4 +36,48 @@ body {
   font-size: 2rem;
   font-weight: 500;
   text-wrap: nowrap;
+}
+
+/* IP address input */
+
+#address-input {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#ip-input {
+  width: 300px;
+  background: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.7rem 0 0 0.7rem;
+  border: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@media (min-width: 600px) {
+  .head-img {
+    height: 240px;
+  }
+
+  #ip-input {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1000px) {
 }

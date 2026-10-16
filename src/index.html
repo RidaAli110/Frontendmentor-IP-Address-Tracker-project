@@ -10,7 +10,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
 
     <title>Frontend Mentor | IP Address Tracker</title>
@@ -26,5 +26,14 @@
       </picture>
       <h1 class="title">IP Address Tracker</h1>
     </header>
+    <main>
+      <form id="address-input">
+        <label class="visually-hidden" for="ip-input">IP address input</label>
+        <input id="ip-input" type="text" placeholder="Enter IP address" />
+        <button aria-label="Search" id="search-btn" type="button">
+          <img src="/images/icon-arrow.svg" alt="" />
+        </button>
+      </form>
+    </main>
   </body>
 </html>
