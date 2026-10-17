@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+:focus-visible {
+  outline: 1px solid whitesmoke;
+  outline-offset: 2px;
 }
 
 :root {
@@ -43,6 +50,7 @@ body {
 #address-input {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: absolute;
   top: 90px;
   left: 50%;
@@ -52,9 +60,23 @@ body {
 #ip-input {
   width: 300px;
   background: white;
-  padding: 0.7rem 1.5rem;
+  padding: 1rem 1.5rem;
   border-radius: 0.7rem 0 0 0.7rem;
   border: none;
+  cursor: pointer;
+}
+
+#search-btn {
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 0 0.7rem 0.7rem 0;
+  background-color: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#search-btn:hover {
+  background-color: var(--grey-text);
 }
 
 .visually-hidden {
